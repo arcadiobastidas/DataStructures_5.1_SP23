@@ -3,14 +3,18 @@
 #include "LinkedStack.cpp"
 #include "Node.cpp"
 #include "BraceChecker.cpp"
+#include <string>
 using namespace std;
 
 
 
 int main() {
+    string expression1,expression2;
     BracesChecker<char> checker; //create a stack of chars to check braces
-    string expression1 = "{ab(c[d])e}"; // balanced
-    string expression2 = "{ab(c))"; // not balanced
+    cout << "Enter first expression:";
+    getline(cin, expression1);
+    cout << "Enter second expression:";
+    getline(cin, expression2);
     if (checker.isBalanced(expression1)) {
         cout << expression1 << " is balanced." << endl;
     } else {
