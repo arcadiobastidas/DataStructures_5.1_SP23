@@ -1,7 +1,5 @@
 #include <iostream>
 #include "StackInterface.h"
-#include "LinkedStack.cpp"
-#include "Node.cpp"
 #include "BraceChecker.cpp"
 #include <string>
 using namespace std;
